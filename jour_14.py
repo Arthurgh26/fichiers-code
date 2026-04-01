@@ -4,7 +4,7 @@ def creer_parc():
     prix = float(input("prix kWh : "))
     return {"nom": nom, "puissance": puissance, "prix": prix}
 
-print("--- Configurration Parc 1 ---")
+print("--- Configuration Parc 1 ---")
 parc1 = creer_parc()
 
 print("--- Configuration Parc 2 ---")
