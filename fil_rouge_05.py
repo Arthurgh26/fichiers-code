@@ -2,7 +2,7 @@ import json
 
 def creer_parc():
     nom = input("Entrez le nom du parc : ")
-    puissance = float(input("Entrez la puissnace du parc : "))
+    puissance = float(input("Entrez la puissance du parc : "))
     prix = float(input("Entrez le prix du kwh : "))
     maintenance = float(input("Coût de maintenance : "))
     benefice = puissance * prix - maintenance
@@ -15,10 +15,10 @@ def calcul_pi(parc):
 try:
     with open("flotte_sauvegardee.json", "r") as f:
         ma_flotte = json.load(f)
-        print("Donneées chargées avec succès !")
+        print("Données chargées avec succès !")
 except FileNotFoundError:
     ma_flotte = []
-    print("Aucune sauvegarde trouvée, nouvelle flotte crée.")
+    print("Aucune sauvegarde trouvée, nouvelle flotte créée.")
 
 while True:
     print("\n--- MENU GESTION SOLAIRE MAURICE ---")
@@ -64,8 +64,8 @@ while True:
         else:
             print("Aucun parc dans la flotte !")
     elif choix == "3":
-        with open("flotte_sauvegardee.json", "w") as f:
+        with open("flotte_sauvegardée.json", "w") as f:
             json.dump(ma_flotte, f)
             
-        print("Sauvegarde effectueé. Au revoir !")
+        print("Sauvegarde effectuée. Au revoir !")
         break
