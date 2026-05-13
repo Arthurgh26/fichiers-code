@@ -38,6 +38,7 @@ while True:
             moyenne_ile = somme_pi / nombre_parcs
             puissance_totale = sum(p["puissance"] for p in ma_flotte)
             benefice_total = sum(p["benefice"] for p in ma_flotte)
+            roi = 0
             if sum(p["maintenance"] for p in ma_flotte) > 0:
                 roi = benefice_total / sum(p["maintenance"] for p in ma_flotte)
             ma_flotte.sort(key=lambda parc: parc["performance_index"])

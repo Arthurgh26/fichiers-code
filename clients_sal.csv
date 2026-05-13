@@ -1,0 +1,11 @@
+Nom_client,Date_facture,Montant_euros,Statut_paiement,Email
+Dupont SARL,15/03/2024,1200,Payé,dupont@mail.com
+Martin & Co,2024-04-02,850,En attente,martin@mail.com
+Dupont SARL,15/03/2024,1200,Payé,dupont@mail.com
+Leblanc SAS,,430,Payé,leblanc@mail.com
+Moreau Consulting,22/05/2024,2100,,moreau@mail.com
+Garcia PME,2024-06-10,750,En attente,garcia@mail.com
+Dupont SARL,15/03/2024,1200,Payé,dupont@mail.com
+Simon & Fils,30/07/2024,1 650,Payé,simon@mail.com
+Lefebvre Co,2024-08-15,,En attente,
+Roux Industrie,12/09/2024,980,Payé,roux@mail.com
