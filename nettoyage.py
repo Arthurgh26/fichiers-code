@@ -26,12 +26,12 @@ df["Date_facture"] = df["Date_facture"].dt.strftime("%d/%m/%Y")
 
 print("\n[DATES] Toutes les dates uniformisées au format JJ/MM/AAAA.")
 
-df["Montants_euros"] =(
-    df["Montants_euros"]
+df["Montant_euros"] =(
+    df["Montant_euros"]
     .astype(str)
-    .str.replace("","", regex=False)
+    .str.replace(" ","", regex=False)
 )
-df["Montants_euros"] = pd.to_numeric(df["Montants_euros"], errors="coerce")
+df["Montant_euros"] = pd.to_numeric(df["Montant_euros"], errors="coerce")
 
 print("\n[MONTANTS] Espaces supprimés, conversion en nombre effectué.")
 
@@ -42,10 +42,10 @@ for colonne, nombre in valeurs_manquantes.items():
     if nombre > 0:
         print(f" - {colonne} {nombre} cellule(s) vide(s)")
 
-df["Statut_paiment"] = df["Statut_paiment"].fillna("Non renseigné")
+df["Statut_paiement"] = df["Statut_paiement"].fillna("Non renseigné")
 df["Email"] = df["Email"].fillna("Non renseigné")
 df["Date_facture"] = df["Date_facture"].fillna("Non renseigné")
-df["Montant_euros"] = df["Montant_euros"].fillna("Non renseigné")
+df["Montant_euros"] = df["Montant_euros"].fillna("0")
 
 print("\n[VALEURS MANQUANTES] Cellules vides remplacées par 'Non renseigné'.")
 

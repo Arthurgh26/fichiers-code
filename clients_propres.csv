@@ -1,0 +1,9 @@
+Nom_client,Date_facture,Montant_euros,Statut_paiement,Email
+Dupont SARL,15/03/2024,1200.0,Payé,dupont@mail.com
+Martin & Co,Non renseigné,850.0,En attente,martin@mail.com
+Leblanc SAS,Non renseigné,430.0,Payé,leblanc@mail.com
+Moreau Consulting,22/05/2024,2100.0,Non renseigné,moreau@mail.com
+Garcia PME,Non renseigné,750.0,En attente,garcia@mail.com
+Simon & Fils,30/07/2024,1650.0,Payé,simon@mail.com
+Lefebvre Co,Non renseigné,0,En attente,Non renseigné
+Roux Industrie,12/09/2024,980.0,Payé,roux@mail.com
